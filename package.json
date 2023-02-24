@@ -1,0 +1,24 @@
+{
+  "name": "grid_layouts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node-sass style.scss style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Daniel-1017/GRID_LAYOUTS.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Daniel-1017/GRID_LAYOUTS/issues"
+  },
+  "homepage": "https://github.com/Daniel-1017/GRID_LAYOUTS#readme",
+  "devDependencies": {
+    "node-sass": "^8.0.0"
+  }
+}
