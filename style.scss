@@ -23,10 +23,19 @@ body {
 
   display: grid;
 
-  // ROWS AND COLUMNS
+  // ROWS AND COLUMNS / TRACKS
 
-  grid-template-rows: 150px 150px;
-  grid-template-columns: 150px 150px;
+  grid-template-rows: repeat(2, 150px);
+  grid-template-columns: repeat(3, 1fr);
+  /* 
+  grid-template-columns: repeat(2, 150px) 1fr;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-columns: 50% 1fr 1fr; 
+  */
+
+  // fr RAPPRESENTS A FRACTIONS OF THE AVAILABLE SPACE
+
+  // ------------------------------------------------------------
 
   /* 
     GAPS
@@ -44,23 +53,18 @@ body {
     &--1 {
       background-color: orangered;
     }
-
     &--2 {
       background-color: yellowgreen;
     }
-
     &--3 {
       background-color: blueviolet;
     }
-
     &--4 {
       background-color: palevioletred;
     }
-
     &--5 {
       background-color: royalblue;
     }
-
     &--6 {
       background-color: goldenrod;
     }
