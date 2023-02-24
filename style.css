@@ -76,3 +76,42 @@ body {
     .container .item--6 {
       background-color: goldenrod;
       grid-area: 1 / 2 / 2 / 3; }
+
+.container2 {
+  width: 1000px;
+  margin: 30px auto;
+  background-color: #ddd;
+  display: grid;
+  /* 
+    USING MIN CONTENT AND MAX CONTENT
+    
+    grid-template-rows: repeat(2, 150px);
+    grid-template-rows: repeat(2, min-content);
+    grid-template-rows: repeat(2, minmax(150px, min-content));
+    grid-template-columns: max-content 1fr 1fr min-content;
+    */
+  width: 90%;
+  grid-template-rows: repeat(2, minmax(150px, min-content));
+  grid-template-columns: minmax(200px, 300px) repeat(3, 1fr); }
+  .container2 .item {
+    padding: 10px;
+    color: #fff;
+    font-family: sans-serif;
+    font-size: 30px;
+    background-color: orangered; }
+    .container2 .item--1 {
+      background-color: orangered; }
+    .container2 .item--2 {
+      background-color: yellowgreen; }
+    .container2 .item--3 {
+      background-color: blueviolet; }
+    .container2 .item--4 {
+      background-color: palevioletred; }
+    .container2 .item--5 {
+      background-color: royalblue; }
+    .container2 .item--6 {
+      background-color: goldenrod; }
+    .container2 .item--7 {
+      background-color: crimson; }
+    .container2 .item--8 {
+      background-color: darkslategray; }
