@@ -79,7 +79,7 @@ body {
       SPANNING GRID ITEMS
       
       grid-column: 2 / span 2;
-      
+
       grid-column: 2 / -1;
       -1 UNTIL THE END 
       */
@@ -102,5 +102,40 @@ body {
       background-color: goldenrod;
       grid-area: 1 / 2 / 2 / 3;
     }
+  }
+}
+
+// CHALLENGE 1
+.challenge1 {
+  width: 750px;
+  margin: 30px auto;
+
+  & > * {
+    background-color: orangered;
+    color: #fff;
+    padding: 10px;
+    font-weight: bold;
+  }
+
+  display: grid;
+  grid-template-rows: 100px 200px 400px 100px;
+  grid-template-columns: repeat(3, 1fr) 200px;
+  gap: 30px;
+
+  .header {
+    grid-column: 1 / -1;
+  }
+
+  .sidebar {
+    grid-column: 4 / 5;
+    grid-row: 2 / span 2;
+  }
+
+  .main--content {
+    grid-column: 1 / span 3;
+  }
+
+  .footer {
+    grid-column: 1 / -1;
   }
 }
