@@ -13,4 +13,56 @@ html {
 body {
   min-height: 100vh;
   background-color: #333;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+  background-color: #eee;
+  width: 1000px;
+  margin: 30px auto;
+
+  display: grid;
+
+  // ROWS AND COLUMNS
+
+  grid-template-rows: 150px 150px;
+  grid-template-columns: 150px 150px;
+
+  /* 
+    GAPS
+
+    row-gap: 30px;
+    column-gap: 30px; */
+  gap: 30px;
+
+  .item {
+    padding: 20px;
+    font-size: 30px;
+    font-family: inherit;
+    color: #fff;
+
+    &--1 {
+      background-color: orangered;
+    }
+
+    &--2 {
+      background-color: yellowgreen;
+    }
+
+    &--3 {
+      background-color: blueviolet;
+    }
+
+    &--4 {
+      background-color: palevioletred;
+    }
+
+    &--5 {
+      background-color: royalblue;
+    }
+
+    &--6 {
+      background-color: goldenrod;
+    }
+  }
 }
