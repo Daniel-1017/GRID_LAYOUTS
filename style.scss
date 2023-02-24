@@ -105,7 +105,9 @@ body {
   }
 }
 
-// LINE NAMES
+/*
+METHOD 1 - LINE NAMES
+
 .challenge1 {
   width: 1000px;
   margin: 30px auto;
@@ -116,6 +118,8 @@ body {
     padding: 10px;
     font-weight: bold;
   }
+
+  LINE NAMES
 
   display: grid;
   grid-template-rows: [header-start] 100px [header-end box-start] 200px [box-end main-start] 400px [main-end footer-start] 100px [footer-end];
@@ -140,6 +144,50 @@ body {
 
   .footer {
     grid-column: col-start 1 / grid-end;
+  }
+} */
+
+// --------------------------------------------------------------
+
+// METHOD 2 - NAME GRID AREAS
+.challenge1 {
+  width: 750px;
+  margin: 30px auto;
+
+  & > * {
+    background-color: orangered;
+    color: #fff;
+    padding: 10px;
+    font-weight: bold;
+  }
+
+  display: grid;
+  grid-template-rows: 100px 200px 400px 100px;
+  grid-template-columns: repeat(3, 1fr) 200px;
+  gap: 30px;
+
+  grid-template-areas:
+    "head head head head"
+    "box box box side"
+    "main main main side"
+    "foot foot foot foot";
+  /* "foot foot . foot"
+  use . for empty cel */
+
+  .header {
+    grid-area: head;
+  }
+
+  .sidebar {
+    grid-area: side;
+  }
+
+  .main--content {
+    grid-area: main;
+  }
+
+  .footer {
+    grid-area: foot;
   }
 }
 
